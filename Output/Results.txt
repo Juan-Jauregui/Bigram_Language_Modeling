@@ -1,0 +1,27 @@
+
+a. See ./Models/LB.json
+
+b. The perplexity of LB on LB_Test is 8.458083131505514
+
+c. See ./Models/MB.json
+
+d. The perplexity of MB on MB_Test is 2.95613930979872
+
+e. The differences of the perplexities of each model on their
+respective test corpora are not drastic, though they are notable.
+Due to the fact that LB_Train was significantly smaller than MB_Train,
+the perplexity of LB on LB_Test was higher than MB's was on MB_Test.
+
+f.
+    * The perplexity of MB on LB_Train is 5.170608805338878
+    * The perplexity of LB on MB_Train is 1787.0408907688973
+
+The perplexity of MB on LB_Train was actually better than that of LB
+on LB_Test, despite being derived from a different interlocutor.
+I suspect the sheer size of MB's base corpus is diverse enough to
+predict LB_Train well enough.
+
+LB on MB_Train, on the other hand,
+has a horrendous perplexity of 1787. The small size of LB's corpus
+combined with the (wildly) different source of speaker likely makes
+LB not a very good model.
